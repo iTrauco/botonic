@@ -1,8 +1,8 @@
 {
   "name": "@botonic/react",
-  "version": "0.7.0",
+  "version": "0.8.0-beta.2",
   "description": "Build Chatbots using React",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf lib && babel src --out-dir lib --copy-files"
@@ -10,13 +10,26 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
     "@botonic/core": "0.7.0",
     "axios": "^0.18.0",
+    "babel-plugin-add-module-exports": "^1.0.0",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
+    "react-hot-loader": "^4.8.3",
     "react-json-view": "^1.19.1",
     "react-router-dom": "^4.3.1",
     "react-textarea-autosize": "^7.1.0",
     "unescape": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.4.0",
+    "@babel/runtime": "^7.4.3",
+    "babel-dts-generator": "^0.6.3"
   }
 }
