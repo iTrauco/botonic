@@ -18,19 +18,20 @@ const terserPlugin = new TerserPlugin({
 });
 
 const babelLoaderConfig = {
-  test: /\.(js|jsx)$/,
+  test: /\.(js|jsx|ts|tsx)$/,
   exclude: /node_modules\/(?!(@botonic)\/)/,
   use: {
     loader: "babel-loader",
     options: {
       cacheDirectory: true,
-      presets: ["@babel/preset-env", "@babel/react", "@babel/typescript"],
+      presets: ["@babel/preset-env", "@babel/react", '@babel/preset-typescript'],
       plugins: [
         require("@babel/plugin-proposal-object-rest-spread"),
         require("@babel/plugin-proposal-class-properties"),
         require("babel-plugin-add-module-exports"),
         require("@babel/plugin-transform-runtime"),
-        require("babel-plugin-react-css-modules")
+        require("react-hot-loader/babel"),
+        require('babel-plugin-styled-components')
       ]
     }
   }
@@ -201,7 +202,7 @@ const botonicServerConfig = {
     libraryExport: "default"
   },
   module: {
-    rules: [typescriptLoaderConfig, fileLoaderConfig, nullLoaderConfig]
+    rules: [babelLoaderConfig, fileLoaderConfig, stylesLoaderConfig]
   },
   resolve: {
     extensions: ["*", ".ts", ".tsx", ".js", ".jsx"]
