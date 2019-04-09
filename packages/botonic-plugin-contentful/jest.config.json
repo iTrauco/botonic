@@ -1,0 +1,27 @@
+{
+  "roots": [
+    "<rootDir>"
+  ],
+  "transform": {
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  "testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.(ts|tsx)$",
+  "testPathIgnorePatterns": [
+    "/dist"
+  ],
+  "collectCoverageFrom": [
+    "src/**/*.{js,jsx,ts,tsx}",
+    "!/node_modules/"
+  ],
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js",
+    "jsx"
+  ],
+  "snapshotSerializers": [],
+  "setupFilesAfterEnv": [],
+  "moduleNameMapper": {
+    "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+  }
+}

@@ -16,24 +16,29 @@
   "dependencies": {
     "@babel/core": "^7.4.3",
     "@babel/plugin-transform-runtime": "^7.4.3",
-    "@babel/preset-env": "^7.4.3",
-    "@babel/preset-react": "^7.0.0",
     "@botonic/react": "^0.8.0-beta.2",
-    "@types/react": "^16.8.12",
     "babel-plugin-add-module-exports": "^1.0.0",
     "contentful": "^7.5.0",
-    "typescript": "^3.4.1"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "typescript": "^3.4.2"
   },
   "devDependencies": {
+    "@babel/plugin-external-helpers": "^7.2.0",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
     "@babel/runtime": "latest",
     "@types/jest": "^24.0.11",
+    "@types/react": "^16.8.13",
+    "@types/react-dom": "^16.8.3",
     "@typescript-eslint/eslint-plugin": "^1.6.0",
     "@typescript-eslint/parser": "^1.6.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.7.1",
+    "babel-loader": "^8.0.5",
     "babel-plugin-react-css-modules": "^5.2.4",
     "babel-preset-jest": "^24.6.0",
     "eslint": "^5.16.0",
@@ -41,9 +46,16 @@
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
+    "html-webpack-plugin": "^3.2.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^24.7.1",
     "prettier": "^1.16.4",
-    "ts-jest": "^24.0.2"
+    "source-map-loader": "^0.2.4",
+    "ts-jest": "^24.0.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.0",
+    "webpack-hot-middleware": "^2.24.3"
   },
   "engines": {
     "node": ">=8.10.0"
